@@ -16,18 +16,19 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
 }
 .container{
     max-width: 80vw;
-    /* max-height: 75vh; */
-    padding: 2rem 1rem;
+     padding:  2rem; 
     margin: 0 auto;
-    /* color: aqua; */
     text-decoration: none;
+    
     
 
 }
 .header_container{
     margin-bottom: 3rem;
+    text-decoration: none;
 }
 .header_title{
+    text-decoration: none;
     margin-bottom: 2rem;
     font-size: 1.7rem;
     line-height: 2rem;
@@ -36,6 +37,7 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
 
 }
 .header_description{
+    text-decoration: none;
     max-width: 95%;
     text-align: center;
     color: rgb(94, 71, 71);
@@ -45,7 +47,19 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    text-decoration: none;
 }
+@media(max-width: 480px){
+    .main_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width:650){
+    .main_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (min-width:650){
     .main_container{
         grid-template-columns: repeat(2, 1fr);
@@ -61,6 +75,15 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
         grid-template-columns: repeat(4, 1fr);
     }
 }
+@media (min-width: 1441){
+    .main_container{
+    grid-template-columns: repeat(4, 1fr);}
+}
+@media(min-width: 1025px) and (max-width:1440px){
+    .main_container{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
 .card_container{
     display: flex;
     flex-direction: column;
@@ -73,7 +96,7 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
     position: relative;
     overflow: hidden;
     height: 10rem;
-    /* width: 20rem; */
+    
 }
 .card_image{
   object-fit: cover;
@@ -82,7 +105,7 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
   height: 100%;
   width: 100%;
 }.card_image:hover {
-    /* background-color: darkblue; */
+    
     color: white;
     transform: scale(1.2);
     transition-duration: 200ms;
