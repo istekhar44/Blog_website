@@ -54,7 +54,17 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
         grid-template-columns: repeat(1, 1fr);
     }
 }
-@media (min-width:650){
+@media(max-width: 483px){
+    .main_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media(max-width: 527px){
+    .main_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width:630){
     .main_container{
         grid-template-columns: repeat(2, 1fr);
     }
